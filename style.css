@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+
+
+*{margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{background-color:#566573;}
+
+h1{font-family:fantasy;
+margin:auto;
+padding-left: 20px;
+font-size:40px;
+font-style: italic;
+background-color: #123;
+}
+
+
+.height{height: 10px;
+margin: auto;
+}
+
+
+h3{font-family: monospace;
+font-style: italic;
+font-size: 30px;
+margin: auto;
+padding-left: 20px;}
+
+p{font-family:serif;
+	font-size: 20px;
+	font-style:italic;
+	margin: auto;
+}
+
+.navbar{display: flex;
+padding: 20px;
+text-align: center;
+}
+
+nav{flex: 1;
+text-align: right;}
+
+nav ul{display: inline-block;
+list-style-type: none;}
+
+nav ul li{
+	display: inline-block;
+	margin: 30px;
+}
+
+a{text-decoration: none;
+color: #3ff}
+
+.container{max-width: 1300px;
+	margin: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.btn{display: inline-block;
+	background: #ff523b;
+	color: #ff2;
+	padding: 8px 30px;
+	margin: 30px 0px;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+
+.btn:hover{background: #563434;}
+
+/*Contact Us Page*/
+.cBody{background-image: url("https://github.com/Anharuz/RahmanMotorsImages/blob/main/ImagesRahman/5.jpeg?raw=true");
+}
+h2{display: inline-block;
+	background: #c3c410;
+	color:darkcyan;
+	padding:15px 40px;
+	margin: 40px 0px;
+	border-radius: 5px;
+}
+h3{color: gray;}
+.contact{font-family: fantasy;
+	display: inline-block;
+padding-left: 10px;
+padding-right: 10px;
+color: gray;}
+
+/*Login|Page------------*/
+.login{
+	width: 100%;
+	height: 100vh;
+	background-color: linear-gradient;
+	background-position:center ;
+	background-size:cover ;
+	position: relative;
+}
+.form-box{
+	width: 90%;
+	max-width: 450px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	background: #fff;
+	padding: 50px 60px 70px;
+	text-align: center;
+}
+.form-box h1{
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #3c00a0;
+	position: relative;
+}
+.form-box h1::after{
+	content: '';
+	width: 30px;
+	height: 4px;
+	border-radius: 3px;
+	background: #3c00a0;
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.input-field{
+	background: #eaeaea;
+	margin: 15px 0;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+}
+input{
+	width: 100%;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	padding: 18px 15px;
+}
+.btn-field{
+	width: 100%;
+	display: flex;
+}
+.btn-field button{
+	flex-basis: 25%;
+	background: #3c00a0;
+	color: #fff;
+	height: 40px;
+	border-radius: 20px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	transition: background 1s;
+}
+.input-group{
+	height: 200px;
+}
+
+/* upload page---------------*/
+*{
+	font-family: 'Taviraj', serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	width: 500px;
+}
+.title{
+	background: #f3f4f8;
+	padding: 15px;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.file_upload_list .file_item{
+	display: flex;
+	padding: 15px 20px;
+	border: 1px solid #f3f4f8;
+}
+.file_item .format{
+	background: #8078d3;
+	border-radius: 10px;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	text-align: center;
+	margin-right: 15px;
+}
+.file_item .file_progress{
+	width: calc(100% - 60px);
+	font-size: 14pxs;
+}
+.file_item .file_info, .file_item .file_size_wrap{
+	display: flex;
+	align-items: center;
+}
+.file_item .file_info{
+
+	justify-content: space-between;
+
+}
+.file_item .progress{
+	width: 100%;
+	height: 4px;
+	background: #efefef;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 8px;
+	position: relative;
+}
+.file_item .progress .inner_progress{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #58e380;
+}
+.file_item .file_size{
+	margin-right: 15px;
+
+}
+.file_item .file_close{
+	border: 1px solid #8178d3;
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+	color: #8178d3;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	line-height: 18px;
+}
+.file_item .file_close hover{
+	background: #8551d3;
+	color: #ff8;
+	}
+	.choose_file label{
+		display: block;
+		border:2px dashed #81ff45;
+		padding: 15px;
+		margin: 10px;
+		width: calc(100% - 20px);
+		text-align: center;
+		cursor: pointer;
+	}
+.choose_file #choose_file{
+	outline: none;
+	width: 100%;
+	opacity: 0;
+}
+.choose_file span{
+	font-size: 14px;
+	color: #8178d3;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
